@@ -96,7 +96,6 @@ Antes de executar o projeto, é necessário ter instalado:
 
 Abra o terminal e execute:
 
-```bash
 git clone https://github.com/julianafalcaoo/zoobet-projeto.git
 cd zoobet-projeto
 
@@ -138,15 +137,11 @@ ALGORITHM = "HS256"
 ACCESS_TOKEN_EXPIRE_MINUTES = 60
 FRONTEND_URL = http://localhost:5173
 
-#4.4 Executar migrations do bd
-
-alembic upgrade head
-
-# 4.5 Inicializar o servidor backend
+#4.4 Inicializar o servidor backend
  .\venv\Scripts\Activate  
  uvicorn app.main:app --reload 
 
-# 4.6 Backend disponível em:
+# 4.5 Backend disponível em:
 
 API: http://127.0.0.1:8000
 Documentação Swagger: http://127.0.0.1:8000/docs
