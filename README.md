@@ -97,7 +97,7 @@ Antes de executar o projeto, é necessário ter instalado:
 Abra o terminal e execute:
 
 ```bash
-git clone https://github.com/julianafalcaoo/ZOOBET.git
+git clone https://github.com/julianafalcaoo/zoobet-projeto.git
 cd ZOOBET
 
 ---
