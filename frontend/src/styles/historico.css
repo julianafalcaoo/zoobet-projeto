@@ -1,0 +1,156 @@
+.historico-page {
+  padding-top: 36px;
+  padding-bottom: 36px;
+}
+
+.historico-topo {
+  margin-bottom: 24px;
+}
+
+.historico-titulo {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #0d3f7a;
+  margin-bottom: 8px;
+}
+
+.historico-subtitulo {
+  color: #5d7393;
+  margin-bottom: 0;
+}
+
+.resumo-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.resumo-card {
+  background: #f7f9fc;
+  border: 1px solid #d9e4f3;
+  border-radius: 16px;
+  padding: 18px;
+  box-shadow: 0 4px 12px rgba(15, 63, 122, 0.05);
+}
+
+.resumo-card-verde {
+  background: #eef8f1;
+  border-color: #bfe7c8;
+}
+
+.resumo-label {
+  display: block;
+  font-size: 0.95rem;
+  color: #000000;
+  margin-bottom: 8px;
+}
+
+.resumo-valor {
+  font-weight: 800;
+}
+
+.resumo-valor {
+  color: #1662c4;
+}
+
+.resumo-valor.verde {
+  color: #139c46;
+}
+
+.filtros-barra {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 32px;
+}
+
+.filtro-btn {
+  border: 1px solid #d5e3f2;
+  background: #fff;
+  color: #163b6d;
+  padding: 10px 16px;
+  border-radius: 12px;
+  font-weight: 700;
+  transition: 0.2s ease;
+}
+
+.filtro-btn:hover {
+  background: #f2f7fd;
+}
+
+.filtro-btn.ativo {
+  background: #1662c4;
+  color: #fff;
+  border-color: #1662c4;
+}
+
+.historico-vazio {
+  min-height: 280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #7b8faa;
+  text-align: center;
+}
+
+.vazio-icone {
+  font-size: 3rem;
+  margin-bottom: 12px;
+}
+
+.historico-lista {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.aposta-item {
+  background: #ffffff;
+  border: 1px solid #dce7f5;
+  border-radius: 14px;
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+
+@media (max-width: 576px) {
+  .historico-page {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+
+  .historico-titulo {
+    font-size: 1.6rem;
+  }
+
+  .filtros-barra{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+
+  .resumo-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 6px;
+  }
+  
+  .resumo-card {
+    padding: 8px;
+  }
+
+  .resumo-label {
+    font-size: 0.62rem;
+  }
+
+  .resumo-valor {
+    font-size: 0.82rem;
+  }
+
+  .aposta-item {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,19 @@
+.layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: #eef3f9;
+}
+
+.conteudo-principal {
+  flex: 1;
+  padding-top: 24px;
+}
+
+.pagina-carregando {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #eef3f9;
+}

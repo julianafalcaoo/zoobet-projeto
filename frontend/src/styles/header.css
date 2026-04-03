@@ -1,0 +1,239 @@
+.cabecalho-principal {
+  background: #220929;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 10px 0;
+  position: relative;
+  z-index: 1000;
+}
+
+.cabecalho-conteudo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  color: #ffffff;
+  position: relative;
+}
+
+.cabecalho-esquerda {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.cabecalho-logo {
+  height: 60px;
+  width: auto;
+  display: block;
+}
+
+.menu-mobile-btn {
+  display: none;
+  background: transparent;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  color: #ffffff;
+  font-size: 1.7rem;
+  cursor: pointer;
+  padding: 6px 10px;
+  border-radius: 10px;
+  transition: 0.2s ease;
+}
+
+.menu-mobile-btn:hover {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.menu-mobile-btn:focus,
+.menu-mobile-btn:active {
+  outline: none;
+  box-shadow: none !important;
+}
+
+.menu-central {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.menu-btn {
+  background: transparent;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  color: #ffffff;
+  padding: 8px 14px;
+  border-radius: 10px;
+  font-weight: 600;
+  transition: 0.2s ease;
+  cursor: pointer;
+}
+
+.menu-btn:hover {
+  background: rgba(255, 255, 255, 0.12);
+  transform: translateY(-1px);
+}
+
+.menu-btn.ativo {
+  background: #23c254;
+  color: #ffffff;
+}
+
+.menu-btn:focus,
+.menu-btn:active {
+  outline: none;
+  box-shadow: none !important;
+}
+
+.cabecalho-direita {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.desktop-direita {
+  display: flex;
+}
+
+.mobile-direita {
+  display: none;
+}
+
+.cabecalho-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 40px;
+  border-radius: 12px;
+  padding: 0 16px;
+  font-weight: 700;
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.08);
+  border: none;
+}
+
+.usuario-badge {
+  min-width: 92px;
+}
+
+.botao-sair {
+  min-height: 40px;
+  border-radius: 12px;
+  padding: 0 16px;
+  font-weight: 700;
+  color: #ffffff !important;
+  background: #e53935 !important;
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.botao-sair:hover {
+  background: #c62828 !important;
+  transform: translateY(-1px);
+}
+
+.botao-sair:focus,
+.botao-sair:active {
+  outline: none;
+  box-shadow: none !important;
+}
+
+.botao-perfil {
+  border: none;
+  cursor: pointer;
+}
+
+@media (max-width: 1100px) {
+  .cabecalho-conteudo {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .menu-central {
+    order: 3;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 768px) {
+  .cabecalho-principal {
+    padding: 10px 0;
+  }
+
+  .cabecalho-conteudo {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .cabecalho-esquerda {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .cabecalho-logo {
+    height: 60px;
+  }
+
+  .menu-mobile-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    font-size: 1.4rem;
+    flex-shrink: 0;
+  }
+
+  .desktop-direita {
+    display: none;
+  }
+
+  .menu-central {
+    display: none;
+  }
+
+  .menu-central.aberto {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    order: 3;
+    margin-top: 8px;
+    padding: 14px;
+    background: #220929;
+    border-radius: 14px;
+    gap: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  .menu-btn {
+    width: 100%;
+    text-align: left;
+    padding: 12px 14px;
+    border-radius: 10px;
+  }
+
+  .mobile-direita {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+    width: 100%;
+    margin-top: 4px;
+  }
+
+  .mobile-direita .cabecalho-badge,
+  .mobile-direita .botao-sair {
+    width: 100%;
+    justify-content: center;
+    min-height: 44px;
+  }
+}
