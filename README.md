@@ -98,7 +98,7 @@ Abra o terminal e execute:
 
 ```bash
 git clone https://github.com/julianafalcaoo/zoobet-projeto.git
-cd ZOOBET
+cd zoobet-projeto
 
 ---
 
