@@ -138,8 +138,9 @@ ACCESS_TOKEN_EXPIRE_MINUTES = 60
 FRONTEND_URL = http://localhost:5173
 
 #4.4 Inicializar o servidor backend
- .\venv\Scripts\Activate  
- uvicorn app.main:app --reload 
+
+ - .\venv\Scripts\Activate  
+ - uvicorn app.main:app --reload 
 
 # 4.5 Backend disponível em:
 
