@@ -1,0 +1,160 @@
+.modal-perfil-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(10, 25, 47, 0.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  z-index: 9999;
+}
+
+.modal-perfil {
+  width: 100%;
+  max-width: 760px;
+  background: #ffffff;
+  color: #163b6d;
+  max-height: 90vh;
+  overflow-y: auto;
+  border-radius: 20px;
+  padding: 22px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
+}
+
+.modal-perfil-topo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.btn-fechar-modal-perfil {
+  border: none;
+  background: #eef4ff;
+  color: #163b6d;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-perfil-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.perfil-foto-box {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  gap: 16px;
+  align-items: center;
+}
+
+.perfil-preview {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.perfil-img {
+  width: 110px;
+  height: 110px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #dce7f5;
+}
+
+.perfil-placeholder {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  background: #eef4ff;
+  color: #1662c4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  border: 3px solid #dce7f5;
+}
+
+.perfil-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+.perfil-coluna-inteira {
+  grid-column: 1 / -1;
+}
+
+.modal-perfil-acoes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: flex-end;
+}
+
+.botao-perfil-acao {
+  min-height: 44px;
+  border-radius: 12px;
+  font-weight: 700;
+}
+
+.botao-perfil {
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.botao-perfil:hover {
+  background: rgba(255, 255, 255, 0.14);
+  transform: translateY(-1px);
+}
+
+@media (max-width: 768px) {
+  .modal-perfil {
+    max-width: 100%;
+    padding: 18px;
+    border-radius: 16px;
+  }
+
+  .perfil-foto-box {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  .perfil-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .perfil-coluna-inteira {
+    grid-column: auto;
+  }
+
+  .modal-perfil-acoes {
+    flex-direction: column;
+  }
+
+  .botao-perfil-acao {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .modal-perfil-overlay {
+    padding: 10px;
+  }
+
+  .modal-perfil {
+    padding: 14px;
+    border-radius: 14px;
+  }
+
+  .perfil-img,
+  .perfil-placeholder {
+    width: 90px;
+    height: 90px;
+  }
+}

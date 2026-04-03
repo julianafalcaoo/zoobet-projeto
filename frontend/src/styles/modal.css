@@ -1,0 +1,219 @@
+.modal-resultado-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(10, 25, 47, 0.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  z-index: 9999;
+}
+
+.modal-resultado {
+  width: 100%;
+  max-width: 760px;
+  background: #220929;
+  color: #ffffff;
+  max-height: 85vh;
+  overflow-y: auto;
+  border-radius: 20px;
+  padding: 22px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
+  animation: aparecerModal 0.2s ease;
+}
+
+.modal-resultado-topo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.btn-fechar-modal {
+  border: none;
+  background: rgba(255, 255, 255, 0.14);
+  color: #ffffff;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-resultado-conteudo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  align-items: start;
+}
+
+.modal-coluna {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.modal-resultado-destaque {
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: #ffd15c;
+  text-align: center;
+  margin-bottom: 4px;
+}
+
+.modal-resultado-linha {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 14px 16px;
+}
+
+.modal-resultado-linha span {
+  font-size: 0.95rem;
+}
+
+.modal-resultado-linha strong {
+  font-size: 1.05rem;
+  text-align: right;
+}
+
+.status-aposta-box {
+  margin-top: 8px;
+  border-radius: 14px;
+  padding: 10px;
+}
+
+.status-aposta-box.ganhou {
+  background: rgba(40, 199, 111, 0.18);
+  border: 1px solid rgba(40, 199, 111, 0.35);
+}
+
+.status-aposta-box.perdeu {
+  background: rgba(255, 99, 132, 0.18);
+  border: 1px solid rgba(255, 99, 132, 0.35);
+}
+
+.status-aposta-titulo {
+  font-size: 1.1rem;
+  font-weight: 800;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.status-aposta-detalhe {
+  font-size: 0.95rem;
+  margin-bottom: 4px;
+}
+
+.modal-resultado-rodape {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+.emoji-resultado {
+  font-size: 1.4rem;
+  line-height: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+}
+
+.resultado-animal {
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 8px;
+  flex-wrap: wrap;
+  text-align: right;
+}
+
+@media (max-width: 768px) {
+  .modal-resultado {
+    width: 90%;
+    padding: 18px;
+    border-radius: 16px;
+  }
+
+  .modal-resultado-conteudo {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .modal-resultado-destaque {
+    font-size: 1.2rem;
+  }
+
+  .modal-resultado-linha {
+    padding: 12px 14px;
+  }
+
+  .modal-resultado-linha strong {
+    font-size: 1rem;
+  }
+
+  .emoji-resultado {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .modal-resultado-overlay {
+    padding: 10px;
+  }
+
+  .modal-resultado {
+    padding: 14px;
+    max-height: 90vh;
+    border-radius: 14px;
+  }
+
+  .modal-resultado-topo h4 {
+    font-size: 1rem;
+  }
+
+  .btn-fechar-modal {
+    width: 36px;
+    height: 36px;
+  }
+
+  .modal-resultado-destaque {
+    font-size: 1.05rem;
+  }
+
+  .modal-resultado-linha {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .modal-resultado-linha strong {
+    text-align: left;
+    font-size: 0.98rem;
+    width: 100%;
+  }
+
+  .status-aposta-titulo {
+    font-size: 1rem;
+  }
+
+  .status-aposta-detalhe {
+    font-size: 0.9rem;
+  }
+
+  .resultado-animal {
+    justify-content: flex-start;
+    text-align: left;
+    width: 100%;
+  }
+
+  .emoji-resultado {
+    font-size: 1.15rem;
+  }
+}
